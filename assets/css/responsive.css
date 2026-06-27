@@ -1,0 +1,15 @@
+/* ==========================================================================
+   PLATIM — Media queries (responsive)
+   Cargar al final, después de variables.css, style.css y components.css
+   ========================================================================== */
+
+@media (max-width: 880px) {
+  .main-nav { display: none; }
+  .menu-toggle { display: inline-flex; }
+}
+
+@media (max-width: 600px) {
+  .hero-stats { grid-template-columns: 1fr 1fr; }
+  .cta-band .container { flex-direction: column; align-items: flex-start; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+}

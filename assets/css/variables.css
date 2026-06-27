@@ -1,0 +1,34 @@
+/* ==========================================================================
+   PLATIM — Variables del sistema de diseño
+   Colores, fuentes y tamaños base · "Seguridad que inspira confianza"
+
+   Paleta
+     Azul oscuro   #0D1B2A   (texto / fondos dark)
+     Azul gradiente#14283d
+     Footer        #0a1521
+     Verde         #6BAA1F   (acento / CTA)
+     Verde claro   #A7D957   (acento sobre dark)
+     Gris          #6B7280
+     Gris texto    #51607a
+     Gris claro    #E5E7EB
+     Gris sección  #F6F7F9
+     Blanco        #FFFFFF
+   ========================================================================== */
+
+:root {
+  --azul: #0D1B2A;
+  --azul-2: #14283d;
+  --footer: #0a1521;
+  --verde: #6BAA1F;
+  --verde-osc: #4d7a16;
+  --verde-claro: #A7D957;
+  --gris: #6B7280;
+  --gris-texto: #51607a;
+  --borde: #E5E7EB;
+  --borde-input: #D7DCE3;
+  --gris-sec: #F6F7F9;
+  --blanco: #FFFFFF;
+  --dark-muted: #C6D0DE;
+  --dark-muted-2: #8A98AC;
+  --max: 1180px;
+}
