@@ -21,7 +21,10 @@ body {
 a { color: inherit; }
 img { max-width: 100%; display: block; }
 input, textarea, select, button { font-family: inherit; }
-h1, h2, h3, h4 { margin: 0; line-height: 1.12; letter-spacing: -.02em; }
+h1, h2, h3, h4 { margin: 0; line-height: 1.12; letter-spacing: -.02em; text-wrap: balance; }
+
+/* Elimina el retardo de doble-tap en móvil (mejora respuesta táctil) */
+a, button, summary, label { touch-action: manipulation; }
 
 /* skip link accesible */
 .skip-link {
