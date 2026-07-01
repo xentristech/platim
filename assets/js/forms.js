@@ -8,7 +8,7 @@
   var card = document.getElementById('formCard');
   if (!form || !card) return;
 
-  var WHATSAPP = '573023785914';
+  var WHATSAPP = '573023660481';
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
