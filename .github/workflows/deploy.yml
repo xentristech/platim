@@ -20,10 +20,9 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          # Carpeta destino en Hostinger.
-          # - Cuenta FTP PRINCIPAL de la cuenta:  /domains/platim.co/public_html/
-          # - Cuenta FTP dedicada a platim.co:    ./
-          server-dir: /domains/platim.co/public_html/
+          # Carpeta destino en Hostinger (cuenta FTP u848706566.platim.co)
+          server-dir: /public_html/
+          port: 21
           # Archivos que NO deben subirse al servidor
           exclude: |
             **/.git*
