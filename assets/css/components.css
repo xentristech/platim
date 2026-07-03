@@ -15,8 +15,8 @@
 .header-inner { height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
 .brand { display: flex; align-items: center; gap: 11px; text-decoration: none; }
 .brand svg { flex: none; }
-.brand-logo {width: auto; display: block; }
-@media (max-width: 600px) { .brand-logo { height: 65px; } }
+.brand-logo { height: 50px; width: auto; display: block; }
+@media (max-width: 600px) { .brand-logo { height: 42px; } }
 .brand-text { display: flex; flex-direction: column; line-height: 1; }
 .brand-name { font-weight: 900; font-size: 22px; letter-spacing: .02em; color: var(--azul); }
 .brand-sub { font-size: 9.5px; letter-spacing: .18em; text-transform: uppercase; color: var(--gris); font-weight: 600; margin-top: 3px; }
