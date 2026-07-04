@@ -23,6 +23,7 @@ jobs:
           # Carpeta destino en Hostinger (cuenta FTP u848706566.platim.co)
           server-dir: /public_html/
           port: 21
+          timeout: 120000
           # Archivos que NO deben subirse al servidor
           exclude: |
             **/.git*
