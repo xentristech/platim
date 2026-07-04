@@ -30,3 +30,4 @@ jobs:
             **/.github/**
             **/.agents/**
             skills-lock.json
+            README.md
