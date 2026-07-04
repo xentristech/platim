@@ -20,6 +20,9 @@
 - PLATIM asesora en la selección según los riesgos y el sector.
 - Se atienden pedidos por volumen para dotar equipos completos.
 
+## Blog / recursos
+- [Cómo elegir el EPP adecuado para tu empresa según el riesgo](https://www.platim.co/blog/como-elegir-epp-empresa): guía práctica para elegir EPP por tipo de riesgo, por sector, errores comunes y cumplimiento SST (SG-SST) en Colombia.
+
 ## Legal
 - [Política de Privacidad](https://www.platim.co/politica-privacidad)
 - [Términos y Condiciones](https://www.platim.co/terminos-condiciones)
