@@ -233,6 +233,7 @@ select:focus-visible, textarea:focus-visible, summary:focus-visible {
 .footer-brand { max-width: 320px; }
 .footer-brand .brand-row { display: flex; align-items: center; gap: 11px; }
 .footer-brand .brand-name { color: #fff; }
+.footer-brand .footer-logo { display: block; width: 200px; max-width: 100%; height: auto; filter: brightness(0) invert(1); }
 .footer-slogan { font-size: 14.5px; font-weight: 600; color: var(--verde-claro); margin: 16px 0 0; }
 .footer-desc { font-size: 14px; line-height: 1.6; color: var(--dark-muted-2); margin: 12px 0 0; }
 .footer-col h3 { font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: #fff; font-weight: 700; margin: 0 0 16px; }
