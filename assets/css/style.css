@@ -289,3 +289,21 @@ select:focus-visible, textarea:focus-visible, summary:focus-visible {
   margin-top: 44px; padding-top: 22px; border-top: 1px solid var(--borde);
   font-size: 14px; color: var(--gris);
 }
+
+/* ==========================================================================
+   TEXTO JUSTIFICADO — párrafos descriptivos
+   Solo bloques de texto anchos. Se desactiva en móvil (ver responsive.css)
+   porque en columnas estrechas el justificado abre "ríos" de espacio.
+   ========================================================================== */
+.section-head:not(.centered) .lead:not(.centered),
+.prose p,
+.legal p,
+.legal li,
+.faq__answer p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+.legal .legal-data li,
+.legal .legal-foot,
+.legal .legal-meta { text-align: left; hyphens: none; }

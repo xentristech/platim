@@ -12,4 +12,11 @@
   .hero-stats { grid-template-columns: 1fr 1fr; }
   .cta-band .container { flex-direction: column; align-items: flex-start; }
   .footer-bottom { flex-direction: column; align-items: flex-start; }
+
+  /* El justificado abre "ríos" de espacio en columnas estrechas */
+  .section-head:not(.centered) .lead:not(.centered),
+  .prose p,
+  .legal p,
+  .legal li,
+  .faq__answer p { text-align: left; hyphens: none; }
 }
