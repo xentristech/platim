@@ -12,17 +12,12 @@
   var DATE_KEY = 'platim_cookie_consent_date';
   var POLICY_URL = '/politica-privacidad';
 
-  /* --- Estado por defecto para Google Consent Mode (v2): todo denegado --- */
+  /* --- Google Consent Mode v2 ---
+     El estado POR DEFECTO (todo denegado) se define en un <script> inline
+     en el <head> de cada página, ANTES de Google Tag Manager, para que GTM
+     nunca dispare etiquetas sin consentimiento. Aquí solo actualizamos. --- */
   window.dataLayer = window.dataLayer || [];
   function gtag() { window.dataLayer.push(arguments); }
-  gtag('consent', 'default', {
-    ad_storage: 'denied',
-    analytics_storage: 'denied',
-    ad_user_data: 'denied',
-    ad_personalization: 'denied',
-    functionality_storage: 'granted',
-    security_storage: 'granted'
-  });
 
   /* --- Si el usuario ya decidió, aplicamos y salimos (no mostramos nada) --- */
   var saved = null;
