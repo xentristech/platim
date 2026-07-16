@@ -79,6 +79,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span class="badge" style="margin:22px auto 0;">Solicitud recibida</span>
         <h1 style="margin-top:18px;">¡Gracias por escribirnos!</h1>
         <p class="hero-sub" style="margin:18px auto 0;">Muy pronto recibirás tu cotización en el enlace de aquí abajo.</p>
+        <!-- Cotización del bot: aparece SOLO cuando la URL trae ?cot=TOKEN -->
+        <div id="cotBox" hidden style="margin:28px auto 0;">
+          <p id="cotSaludo" class="hero-sub" style="margin:0 0 20px;font-weight:700;">Tu cotización ya está lista 🎉</p>
+          <a id="cotBtn" class="btn btn-green" href="#" target="_blank" rel="noopener">Ver / Descargar mi cotización 📄</a>
+        </div>
       </div>
     </div>
   </section>
@@ -189,5 +194,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script src="/assets/js/main.js" defer></script>
 <script src="/assets/js/menu.js" defer></script>
 <script src="/assets/js/cookies.js" defer></script>
+
+<!-- Cotización del bot: lee ?cot=TOKEN de la URL y arma el botón de descarga.
+     Sin token, no muestra nada (visitas normales del formulario web). -->
+<script>
+  (function () {
+    var API = "https://157-137-224-141.sslip.io";
+    var token = new URLSearchParams(window.location.search).get("cot");
+    if (!token) return;
+    var box = document.getElementById("cotBox");
+    var btn = document.getElementById("cotBtn");
+    var saludo = document.getElementById("cotSaludo");
+    if (!box || !btn) return;
+    btn.href = API + "/cot/" + encodeURIComponent(token);
+    box.hidden = false;
+    fetch(API + "/cot/" + encodeURIComponent(token) + "/info")
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) {
+        if (d && d.nombre && saludo) {
+          saludo.textContent =
+            "Hola " + d.nombre + ", tu cotización " + (d.codigo || "") + " ya está lista 🎉";
+        }
+      })
+      .catch(function () {});
+  })();
+</script>
 </body>
 </html>
