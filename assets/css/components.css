@@ -95,5 +95,6 @@
 /* tarjetas numeradas (beneficios EPP 01-03) */
 .num-card { background: #fff; border: 1px solid var(--borde); border-radius: 16px; padding: 26px; }
 .num-card .num { font-size: 30px; font-weight: 900; color: var(--verde); line-height: 1; }
+.card-body .num { font-size: 30px; font-weight: 900; color: var(--verde); line-height: 1; margin-bottom: 12px; }
 .num-card h3 { font-size: 18px; font-weight: 800; color: var(--azul); margin: 12px 0 0; }
 .num-card p { font-size: 14.5px; line-height: 1.6; color: var(--gris-texto); margin: 8px 0 0; }

@@ -24,7 +24,8 @@
 
     var texto = 'Hola PLATIM, quiero solicitar una cotización:\n\n' + lineas.join('\n');
     window.open('https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(texto), '_blank');
-    card.classList.add('is-sent');
     form.reset();
+    // Lleva a la página de confirmación (meta de conversión medible)
+    window.location.href = '/solicitud-enviada';
   });
 })();
