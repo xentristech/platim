@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /avance.html
+Disallow: /avance
 
 # Rastreadores de IA (SEO para motores generativos / AEO) — permitidos
 User-agent: GPTBot

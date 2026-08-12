@@ -1,0 +1,30 @@
+{
+  "proyecto": "platim.co",
+  "subtitulo": "sitio EPP, uniformes y calzado de protección",
+  "progreso": 82,
+  "faq": "30+",
+  "hecho": [
+    "Sitio estático completo + URLs limpias (.htaccess)",
+    "SEO + AEO/GEO: schema FAQ/LocalBusiness, llms.txt, robots",
+    "Blog con artículos de normativa real (datos y citas)",
+    "Branding integrado: logo, heros y fotos propias",
+    "Auto-deploy GitHub Actions → Hostinger (FTP)",
+    "Banner de cookies + Consent Mode v2 (todas las páginas)",
+    "Landing de gracias /solicitud-enviada (conversión medible)",
+    "Search Console conectado + sitemap enviado"
+  ],
+  "enCurso": [
+    "Google Business Profile (~83%, falta verificar)",
+    "Reenfoque a MINORISTA (detal, no por volumen)",
+    "7º artículo: falta imagen propia + indexar",
+    "Correo del dominio → dotacionplatim@gmail.com"
+  ],
+  "pendiente": [
+    "Fotos reales de calzado (hoy stock)",
+    "Reactivar sección \"modelos\" de calzado",
+    "Rotar contraseña FTP + secret",
+    "Backlinks de vuelta (xentris.llc / farid.com.co)",
+    "Reseñas de Google + directorios (Cámara Comercio)",
+    "Más artículos (alturas, guantes, tallas, IPEVR)"
+  ]
+}
